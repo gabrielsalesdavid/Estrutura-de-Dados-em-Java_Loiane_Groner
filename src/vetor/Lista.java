@@ -60,6 +60,10 @@ public class Lista<T> {
         }
     }
 
+    public T obtem(int posicao) {
+        return this.elements[posicao];
+    }
+
     public T busca01(int posicao) {
         if(!(posicao >= 0 && posicao < tamanho)) {
             throw new IllegalArgumentException("Posição inválida");
