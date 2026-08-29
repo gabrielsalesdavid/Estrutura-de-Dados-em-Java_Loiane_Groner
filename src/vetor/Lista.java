@@ -60,6 +60,10 @@ public class Lista<T> {
         }
     }
 
+    public void limpar() {
+        this.tamanho = 0;
+    }
+
     public T obtem(int posicao) {
         return this.elements[posicao];
     }
