@@ -100,6 +100,13 @@ public class Lista<T> {
         this.tamanho--;
     }
 
+    public void remove01(T element) {
+        int pos = this.busca(element);
+        if(pos > -1) {
+            this.remove(pos);
+        }
+    }
+
     public int tamanho(){
         return this.tamanho();
     }
