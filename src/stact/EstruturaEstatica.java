@@ -54,4 +54,10 @@ public class EstruturaEstatica<T> {
                 ", tamanho=" + tamanho +
                 '}';
     }
+
+    protected void remove() {
+        if(this.tamanho > 0) {
+            this.elements[this.tamanho - 1] = null;
+        }
+    }
 }
